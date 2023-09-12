@@ -1,0 +1,87 @@
+.skills{
+    padding:  0 0.3rem 0 3rem ;
+    display: flex;
+    height: 90vh;
+    margin-bottom: 8rem;
+    margin-top: 3rem;
+    
+}
+
+.leftskill{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: -2rem;
+    
+}
+
+.leftskill>:nth-child(1){
+    color: var(--black);
+    font-size: 4rem;
+    font-weight: bold;
+    
+
+}
+.leftskill>:nth-child(2){
+    color: var(--blue);
+    font-size: 4rem;
+    font-weight: bold;
+
+}
+.leftskill>:nth-child(3){
+    color: var(--gray);
+    font-size: 0.8rem;
+
+}
+.leftskill>:nth-child(4){
+    position: relative;
+
+}
+/* .leftskill>:nth-child(5){
+    position: relative;
+
+} */
+.skde{
+    margin-top: 3rem;
+    display: flex;
+    position: relative;
+    
+    
+}
+
+.left223{
+    /* left: 4rem; */
+    top: 1.5rem;
+    
+}
+.left224{
+margin-left: 5rem;
+margin-right: -20rem;    
+}
+
+
+
+.rightskill{
+    position: relative;
+}
+
+.rightskill>*{
+    position: absolute;
+
+}
+
+.left11{
+    left: 36rem;
+}
+
+.right11{
+    left: 17rem;
+    top: 13rem;
+}
+
+.left22{
+    top: 22rem;
+    left: 36rem;
+
+}
+

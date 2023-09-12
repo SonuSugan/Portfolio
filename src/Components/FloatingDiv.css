@@ -1,0 +1,30 @@
+.floatingdiv{
+    justify-content: space-around;
+    display: flex;
+    background-color: rgb(235, 64, 64);
+    align-items: center;
+    width: 250px;
+    border-radius: 50px;
+    height: 100px;
+    /* text-align: bold; */
+    font-weight: bold;
+   
+
+}
+
+.floatingdiv>img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    /* transform: scale(0.); */
+    font-weight: bold;
+    
+}
+
+#img1{
+    width: 90px;
+}
+
+
+
+

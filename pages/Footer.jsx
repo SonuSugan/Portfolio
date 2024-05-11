@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="footer">
         <img src="wave.png" alt="" />
         <div className="f-content">
-          <span>www.sonu1920@gmail.com / 8610772880</span>
+          <span>www.sonu1920@gmail.com & 8610772880</span>
           <div className="f-icons">
             <FaGithub className='img'/>
             <FaInstagram className='img'/>

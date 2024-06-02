@@ -25,7 +25,7 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch(`portfolio-api-lyart.vercel.app`, {
+      const response = await fetch("portfolio-api-lyart.vercel.app", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

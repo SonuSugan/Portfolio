@@ -37,6 +37,13 @@ mongoose.connect(process.env.MONGO_URI, {
 // Use the contact router
 app.use("/api/contact", contactRouter);
 
+app.use((req, res, next) => {
+  res.on("finish", () => {
+    console.log("Response Headers:", res.getHeaders());
+  });
+  next();
+});
+
 app.listen(PORT, () => {
   console.log(`Server running on ${PORT}`);
 });

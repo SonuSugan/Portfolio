@@ -25,16 +25,13 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch(
-        "https://portfolio-api-lyart.vercel.app/api/contact",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(contact),
-        }
-      );
+      const response = await fetch(`http://localhost:5000/api/contact`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(contact),
+      });
 
       if (response.ok) {
         setContact(defaultContactForm);

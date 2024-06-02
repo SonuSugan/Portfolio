@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "path": "/api/every-day",
+      "schedule": "0 0 * * *"
+    }
+  ],
+  "routes": [{
+    "src": "/(.*)",
+    "dest" : "/"
+    }]
+}

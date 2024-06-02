@@ -6,7 +6,7 @@ const contactRouter = require("./router/auth-router");
 const app = express();
 
 const corsOptions = {
-  origin: "https://portfolio-api-lyart.vercel.app.vercel.app",
+  origin: "https://portfolio-gold-pi-77.vercel.app",
   methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true,

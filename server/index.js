@@ -10,11 +10,14 @@ const app = express();
 
 const corsOptions = {
   origin: "https://portfolio-gold-pi-77.vercel.app",
-  methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD"],
+  methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true,
+  optionsSuccessStatus: 200, // For legacy browser support
 };
 
 app.use(cors(corsOptions));
+app.options("*", cors(corsOptions));
 
 const PORT = process.env.PORT || 5000;
 

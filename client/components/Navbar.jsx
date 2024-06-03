@@ -66,7 +66,7 @@ const Navbar = () => {
           <Link
             to="contact"
             className="button1"
-            offset={-160}
+            offset={-100}
             smooth={true}
             duration={500}
           >

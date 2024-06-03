@@ -28,12 +28,22 @@ const HomeLayout = () => {
           <div>
             <Navbar />
             <div className="Content">
-              <Hero/>
-              <About/>
-              <Project/>
-              <Work/>
-              <Contact/>   
-              <Footer/>
+              <div id="hero">
+                <Hero />
+              </div>
+              <div id="about">
+                <About />
+              </div>
+              <div id="project">
+                <Project />
+              </div>
+              <div id="work">
+                <Work />
+              </div>
+              <div id="contact">
+                <Contact />
+              </div>
+              <Footer />
             </div>
           </div>
         </div>

@@ -52,6 +52,29 @@ const Wrapper = styled.nav`
     transform: scale(11.5rem);
   }
 
+  .button1 {
+    color: var(--black);
+    /* gap: 1rem; */
+    /* padding: 5% 0%; */
+    /* font-size: 1.1rem; */
+  }
+  .button1:hover {
+    cursor: pointer;
+    color: var(--blue);
+    transform: scale(11.5rem);
+  }
+   li  > .active {
+  
+    color: var(--blue);
+    
+  }
+
+
+
+  Link {
+    color: var(--black);
+  }
+
   // toggle button style
 
   .button {

@@ -8,6 +8,7 @@ import About from "../pages/About";
 import Project from "../pages/Project";
 import Footer from "../pages/Footer";
 import Contact from "../pages/Contact";
+import Work from "../pages/Work";
 
 const DashboardContext = createContext();
 
@@ -30,6 +31,7 @@ const HomeLayout = () => {
               <Hero/>
               <About/>
               <Project/>
+              <Work/>
               <Contact/>   
               <Footer/>
             </div>

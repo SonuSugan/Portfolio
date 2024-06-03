@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
   /* height: 50vh; */
-  margin-top: 4rem;
-  .Project {
+  margin-top: 5rem;
+  .Work {
     /* display: flex; */
     padding: 4% 5%;
   }
-  .project-center {
+  .Work-center {
     padding: var(--padding1);
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -19,41 +19,36 @@ const Wrapper = styled.div`
     /* width: 90%; */
   }
 
-  .Project-intro {
-    /* display: flex; */
+  .Work-intro {
+    display: flex;
     justify-content: center;
     /* flex-direction: column; */
     /* border: 2px solid black; */
+    text-align: center;
+    align-items: center;
   }
   .container {
     /* border: 2px solid black; */
+    display: flex;
     padding: 2% 2%;
-    backdrop-filter: var(--blue) saturate(180%) blur(10px);
+    /* backdrop-filter: var(--blue) saturate(180%) blur(10px); */
     /* background-color: var(--blue); */
-    background: var(--blue3);
+    /* background: var(--blue3); */
     justify-content: center;
-    text-align: center;
+    /* text-align: center; */
+    align-items: center;
   }
 
   .container img {
-    width: 90%;
-    height: 90%;
+    width: 50%;
+    height: 50%;
   }
-  .Project-detail {
+  .Work-detail {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .button {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-  }
-  .button-17 > span {
-    /* align-items: center;
-    justify-content: center;
-    text-align: center; */
-  }
+
   @media only screen and (min-width: 300px) and (max-width: 500px) {
     .span1 {
       font-size: 2.4rem;
@@ -62,20 +57,17 @@ const Wrapper = styled.div`
       font-size: 3.2rem;
     }
 
-    .button {
-      justify-content: space-evenly;
-      align-items: center;
-    }
+   
   }
   @media (max-width: 992px) {
-    .project-center {
+    .Work-center {
       display: flex;
       flex-direction: column-reverse;
     }
     .span4 {
       font-size: 1.8rem;
     }
-    .Project {
+    .Work {
       align-items: center;
       text-align: center;
     }
@@ -83,5 +75,3 @@ const Wrapper = styled.div`
 `;
 
 export default Wrapper;
-
-

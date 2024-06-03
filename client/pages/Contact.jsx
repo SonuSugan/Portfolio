@@ -26,7 +26,8 @@ const Contact = () => {
 
     try {
       const response = await fetch(
-        `https://portfolio-edps.onrender.com/api/contact`,
+           `https://portfolio-edps.onrender.com/api/contact`, // while pushing 
+        // "http://localhost:5000/api/contact",
         {
           method: "POST",
           headers: {

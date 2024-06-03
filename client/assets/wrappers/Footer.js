@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-margin-top: 6rem;
+  margin-top: 11rem;
   .footer {
     display: flex;
     align-items: center;
@@ -38,6 +38,7 @@ margin-top: 6rem;
   @media only screen and (min-width: 300px) and (max-width: 500px) {
   }
   @media (max-width: 992px) {
+    margin-top: -1rem;
     .img {
       width: 30px;
       height: 30px;

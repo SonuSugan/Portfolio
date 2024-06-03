@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
   /* height: 50vh; */
-  margin-top: 5rem;
+  margin-top: 3rem;
   .Work {
     /* display: flex; */
     padding: 4% 5%;

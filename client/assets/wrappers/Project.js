@@ -33,6 +33,12 @@ const Wrapper = styled.div`
     background: var(--blue3);
     justify-content: center;
     text-align: center;
+    border-radius: 15px;
+    
+  }
+
+  .contact-right {
+    
   }
 
   .container img {

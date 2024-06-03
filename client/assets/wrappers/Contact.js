@@ -27,6 +27,12 @@ const Wrapper = styled.div`
     border-radius: 15px;
     background: var(--blue3);
   }
+
+  .contact-right {
+    box-shadow: 0 2px 3px 0 rgb(60 64 67 / 30%),
+      0 1px 15px 1px rgb(60 64 67 / 15%);
+    outline: none;
+  }
   .About-froend > img {
     width: 450px;
     height: 320px;
@@ -93,7 +99,7 @@ const Wrapper = styled.div`
       display: flex;
       flex-direction: column;
     }
-    .contact-center{
+    .contact-center {
       align-items: center;
     }
   }

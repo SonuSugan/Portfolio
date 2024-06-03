@@ -48,7 +48,11 @@ const Wrapper = styled.div`
     width: 100%;
     display: block;
     margin: 0 auto;
+    /* box-shadow: 0 2px 3px 0 rgb(60 64 67 / 30%),
+      0 1px 15px 1px rgb(60 64 67 / 15%); */
   }
+
+
   .image-font {
     color: var(--black);
     font-weight: bold;

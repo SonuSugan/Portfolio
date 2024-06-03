@@ -9,11 +9,13 @@ const NavLinks = () => {
   return (
     <div className="nav-links">
       {Links.map((links) => {
-        const { text, icon } = links;
+        const { text, icon , path } = links;
         return (
           <NavLink
             className="nav-link"
             onClick={ toggleSidebar}
+            key={text}
+            to={path}
           >
             <span className="icon">{icon}</span>
             {text}

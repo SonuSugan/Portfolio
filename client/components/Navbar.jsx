@@ -16,8 +16,9 @@ const Navbar = () => {
 
       <ul className="menu">
         <li>Home</li>
-        <li>Skill</li>
-        <li>Experence</li>
+        <li>About</li>
+        <li>Project</li>
+        <li>Work</li>
         <li>Contact</li>
       </ul>
       <button className="button" onClick={toggleSidebar}>

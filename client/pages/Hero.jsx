@@ -14,7 +14,7 @@ const Hero = () => {
           <span className="span1">Hi I Am </span>{" "}
           <span className="span2">SonuSugan</span>
           <span className="span3">
-            Hello there! I am a passionate and dedicated individual with a keen
+            Hello there! I am a passionate and dedicated web developer, keen
             interest in Front-end and MERN development.
             {/* Let me take a moment to
             introduce myself and share my educational journey.I completed my UG

@@ -10,10 +10,12 @@ const Navbar = () => {
   return (
     <Wrapper>
       <div className="logo">
-        <div className="logo_heading">Sonusugan</div>
+        <div className="logo_heading">
+          <Link to="con">Sonusugan</Link>{" "}
+        </div>
       </div>
-      <ul className= {click ? "menu active" : "menu"}>
-        <li >
+      <ul className={click ? "menu active" : "menu"}>
+        <li>
           <Link
             to="hero"
             // activeClass="active"

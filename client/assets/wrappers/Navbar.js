@@ -25,8 +25,9 @@ const Wrapper = styled.nav`
     font-weight: bold;
   }
 
-  .logo_heading {
+  .logo_heading > a {
     font-size: 2rem;
+    color: var(--black);
   }
 
   // list menu design

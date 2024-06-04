@@ -30,7 +30,7 @@ const HomeLayout = () => {
           <BigSidebar />
           <div>
             <Navbar />
-            <div className="Content">
+            <div className="Content" id="con">
               <div id="hero">
                 <Hero />
               </div>

@@ -25,7 +25,7 @@ const Wrapper = styled.nav`
     font-weight: bold;
   }
 
-  .logo_heading > a {
+  .logo_heading_tex {
     font-size: 2rem;
     color: var(--black);
   }
@@ -109,7 +109,7 @@ const Wrapper = styled.nav`
     }
   }
   @media only screen and (min-width: 300px) and (max-width: 550px) {
-    .logo_heading {
+    .logo_heading_tex  {
       font-size: 1.2rem;
     }
   }

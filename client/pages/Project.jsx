@@ -13,7 +13,7 @@ const Project = () => {
         <div className="project-center">
           <div className="Project-intro">
             <div className="container">
-              <img src="/port.png" alt=""  />
+              <img src="/port.png" alt="" />
             </div>
           </div>
           <div className="Project-detail">
@@ -32,21 +32,26 @@ const Project = () => {
               interactive website showcasing my skills and work.
             </span>
             <div className="button">
-              <button className="button-17">
+              <a href="https://github.com/SonuSugan/Portfolio">
                 {" "}
-                <FaGithub /> Code
-              </button>
-              <button className="button-17">
-                {" "}
-                <FaRegCirclePlay /> Demo{" "}
-              </button>
+                <button className="button-17">
+                  {" "}
+                  <FaGithub /> Code
+                </button>
+              </a>
+              <a href="https://portfolio-gold-pi-77.vercel.app/">
+                <button className="button-17">
+                  {" "}
+                  <FaRegCirclePlay /> Demo{" "}
+                </button>
+              </a>
             </div>
           </div>
         </div>
         <div className="project-center">
           <div className="Project-intro">
             <div className="container">
-              <img src="/tour.png" alt=""  />
+              <img src="/tour.png" alt="" />
             </div>
           </div>
           <div className="Project-detail">
@@ -67,15 +72,19 @@ const Project = () => {
               time and money by eliminating the need for a human guide.
             </span>
             <div className="button">
-              <button className="button-17">
+              <a href="https://github.com/SonuSugan/tourist-guide.github.io">
                 {" "}
-                <FaGithub /> Code
-              </button>
-              <button className="button-17">
-                {" "}
-                <FaRegCirclePlay />
-                Demo{" "}
-              </button>
+                <button className="button-17">
+                  {" "}
+                  <FaGithub /> Code
+                </button>
+              </a>
+              <a href="">
+                <button className="button-17">
+                  {" "}
+                  <FaRegCirclePlay /> Demo{" "}
+                </button>
+              </a>
             </div>
           </div>
         </div>

@@ -11,7 +11,7 @@ const Navbar = () => {
     <Wrapper>
       <div className="logo">
         <div className="logo_heading">
-          <Link to="con" offset={-90} duration={800}>
+          <Link className="logo_heading_tex" to="con" offset={-90} duration={800}>
             Sonusugan
           </Link>{" "}
         </div>

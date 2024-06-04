@@ -26,10 +26,10 @@ const Hero = () => {
             more in full-stack development. */}
           </span>
           <div className="social-icon">
-            <a href="#">
+            <a href="https://github.com/SonuSugan">
               <img src="/gitpng.png" alt="git"></img>
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/sonu_sugan?igsh=djVrbXdpaWJtem82">
               <img src="/facebookpng.png" alt="facebookpng"></img>
             </a>
             <a href="#">

@@ -56,13 +56,16 @@ const Wrapper = styled.aside`
     padding: 1rem 0;
     padding-left: 2.5rem;
     text-transform: capitalize;
-    transition: var(--transition);
+    /* transition: var(--transition); */
   }
-  .nav-link:hover {
+  .scroll-link:hover {
     color: var(--blue);
-    padding-left: 3rem;
+    /* padding-left: 3rem; */
     transition: var(--transition);
   }
+  .scroll-link{
+    display: flex;
+  } 
   .icon {
     font-size: 1.5rem;
     margin-right: 1rem;

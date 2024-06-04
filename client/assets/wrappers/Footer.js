@@ -35,6 +35,10 @@ const Wrapper = styled.div`
     width: 50px;
     height: 50px;
   }
+a{
+  color: white;
+}
+
   @media only screen and (min-width: 300px) and (max-width: 500px) {
   }
   @media (max-width: 992px) {

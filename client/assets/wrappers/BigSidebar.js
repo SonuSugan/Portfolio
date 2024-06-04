@@ -41,9 +41,12 @@ const Wrapper = styled.aside`
       transition: padding-left 0.3s ease-in-out;
     }
     .nav-link:hover {
-      padding-left: 3rem;
+      /* padding-left: 3rem; */
       color: var(--blue);
       transition: var(--transition);
+    }
+    .scroll-link {
+      display: flex;
     }
     .icon {
       font-size: 1.5rem;

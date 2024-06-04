@@ -11,9 +11,17 @@ const Footer = () => {
         <div className="f-content">
           <span>www.sonu1920@gmail.com & 8610772XXX</span>
           <div className="f-icons">
-            <FaGithub className='img'/>
-            <FaInstagram className='img'/>
-            <IoIosMail className='img'/>
+            <a href="https://github.com/SonuSugan">
+              {" "}
+              <FaGithub className="img" />
+            </a>
+            <a href="https://www.instagram.com/sonu_sugan?igsh=djVrbXdpaWJtem82">
+              <FaInstagram className="img" />
+            </a>
+            <a href="mailto:www.sonu1920@gmail.com">
+              {" "}
+              <IoIosMail className="img" />
+            </a>
           </div>
         </div>
       </div>

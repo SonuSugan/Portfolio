@@ -6,12 +6,12 @@ import { Link } from "react-scroll";
 
 const Navbar = () => {
   const { toggleSidebar } = useDashboardContext();
-  const [click ,setclick] = useState(false)
+  const [click, setclick] = useState(false);
   return (
     <Wrapper>
       <div className="logo">
         <div className="logo_heading">
-          <Link to="con" offset={-90}>
+          <Link to="con" offset={-90} duration={800}>
             Sonusugan
           </Link>{" "}
         </div>
@@ -24,7 +24,7 @@ const Navbar = () => {
             spy={true}
             offset={-90}
             smooth={true}
-            duration={500}
+            duration={800}
             className="button1"
           >
             Home

@@ -24,7 +24,7 @@ const Navbar = () => {
             spy={true}
             offset={-90}
             smooth={true}
-            duration={800}
+            duration={500}
             className="button1"
           >
             Home

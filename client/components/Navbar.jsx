@@ -11,7 +11,9 @@ const Navbar = () => {
     <Wrapper>
       <div className="logo">
         <div className="logo_heading">
-          <Link to="con">Sonusugan</Link>{" "}
+          <Link to="con" offset={-90}>
+            Sonusugan
+          </Link>{" "}
         </div>
       </div>
       <ul className={click ? "menu active" : "menu"}>

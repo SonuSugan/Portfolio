@@ -2,11 +2,17 @@ import React from "react";
 import Wrapper from "../assets/wrappers/Hero";
 // import Image from "next/image";
 
+
+
 const Hero = () => {
   const imageStyle = {
     width: "50",
     border: "1px solid #fff",
   };
+
+
+
+  
   return (
     <Wrapper>
       <div className="Hero-center">
@@ -48,6 +54,13 @@ const Hero = () => {
                 <img src="/mongo.png" alt="" />
               </span>
             </div>
+          </div>
+          <div className="button-cv ">
+            <a href="/S.K.Sugan.pdf" download>
+              <button className="button-17" type="button">
+                Download CV
+              </button>
+            </a>
           </div>
         </div>
 

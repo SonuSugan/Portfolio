@@ -52,7 +52,6 @@ const Wrapper = styled.div`
       0 1px 15px 1px rgb(60 64 67 / 15%); */
   }
 
-
   .image-font {
     color: var(--black);
     font-weight: bold;
@@ -66,6 +65,9 @@ const Wrapper = styled.div`
     height: 30px;
     margin-right: 10px;
   }
+  .button-cv{
+margin-top: 0.5rem;
+  } 
   @media only screen and (min-width: 300px) and (max-width: 500px) {
     .span1 {
       font-size: 2.4rem;

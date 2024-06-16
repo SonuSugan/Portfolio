@@ -40,10 +40,10 @@ const Project = () => {
                 </button>
               </a>
               <a href="https://portfolio-gold-pi-77.vercel.app/">
-                {/* <button className="button-17">
+                <button className="button-17">
                   {" "}
                   <FaRegCirclePlay /> Demo{" "}
-                </button> */}
+                </button>
               </a>
             </div>
           </div>
@@ -80,10 +80,10 @@ const Project = () => {
                 </button>
               </a>
               <a href="">
-                {/* <button className="button-17">
+                <button className="button-17">
                   {" "}
                   <FaRegCirclePlay /> Demo{" "}
-                </button> */}
+                </button>
               </a>
             </div>
           </div>

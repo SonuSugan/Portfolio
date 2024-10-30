@@ -55,7 +55,7 @@ const Project = () => {
             </div>
           </div>
           <div className="Project-detail">
-            <span className="span4">Toure Guide Portal </span>
+            <span className="span4">Tour Guide Portal </span>
             <span className="span5">
               This Tour Guide portal for domestic tourists that includes user
               registration, login, state selection, and a map feature using the

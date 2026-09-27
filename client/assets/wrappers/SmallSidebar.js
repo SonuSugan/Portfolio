@@ -65,7 +65,7 @@ const Wrapper = styled.aside`
   .nav-link {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
     color: var(--black);
     border-radius: 14px;
     padding: 0.65rem 0.75rem;
@@ -78,7 +78,7 @@ const Wrapper = styled.aside`
   .scroll-link {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
     width: 100%;
     font-weight: 600;
     font-size: 1.05rem;

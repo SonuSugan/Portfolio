@@ -173,6 +173,15 @@ const Wrapper = styled.div`
     font-size: 0.82rem;
   }
 
+  @media only screen and (min-width: 300px) and (max-width: 500px) {
+    .span1 {
+      font-size: 2.4rem;
+    }
+    .span2 {
+      font-size: 3.2rem;
+    }
+  }
+
   @media (max-width: 992px) {
     text-align: center;
     .cert-center {

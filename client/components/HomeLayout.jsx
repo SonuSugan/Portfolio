@@ -2,13 +2,14 @@ import React, { createContext, useContext, useState } from "react";
 import Wrapper from "../assets/wrappers/HomeLayout";
 import Navbar from "./Navbar";
 import SmallSidebar from "./SmallSidebar";
-import BigSidebar from "./BigSidebar";
 import Hero from "../pages/Hero";
 import About from "../pages/About";
 import Project from "../pages/Project";
 import Footer from "../pages/Footer";
 import Contact from "../pages/Contact";
 import Work from "../pages/Work";
+import Skills from "../pages/Skills";
+import Certifications from "../pages/Certifications";
 
 const DashboardContext = createContext();
 
@@ -28,7 +29,6 @@ const HomeLayout = () => {
       <Wrapper>
         <div className="HomeLay">
           <SmallSidebar />
-          <BigSidebar />
           <div>
             <Navbar />
             <div className="Content" id="con">
@@ -43,6 +43,12 @@ const HomeLayout = () => {
               </div>
               <div id="work">
                 <Work />
+              </div>
+              <div id="skills">
+                <Skills />
+              </div>
+              <div id="certifications">
+                <Certifications />
               </div>
               <div id="contact">
                 <Contact />

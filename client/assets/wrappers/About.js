@@ -1,12 +1,15 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
+  position: relative;
   /* height: 50vh; */
   margin-top: 5rem;
   .About-center {
+    position: relative;
+    z-index: 1;
     padding: var(--padding1);
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     justify-content: space-between;
     /* height: 100vh; */
     gap: 2rem;
@@ -22,6 +25,10 @@ const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
     text-align: center;
+    transition: transform 0.35s ease;
+  }
+  .About-froend:hover {
+    transform: translateY(-4px);
   }
   .About-froend > img {
     width: 450px;
@@ -42,12 +49,9 @@ const Wrapper = styled.div`
     }
   }
   @media (max-width: 992px) {
-    margin-top: -25rem;
     .About-center {
-      margin-top: 30rem;
       display: flex;
       flex-direction: column;
-      /* flex-direction: column-reverse; */
     }
     .About-intro {
       align-items: center;

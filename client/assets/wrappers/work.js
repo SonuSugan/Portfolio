@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   .Work-center {
     padding: var(--padding1);
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     justify-content: center;
     /* height: 100vh; */
     padding: 3% 2%;
@@ -28,20 +28,21 @@ const Wrapper = styled.div`
     align-items: center;
   }
   .container {
-    /* border: 2px solid black; */
     display: flex;
-    padding: 2% 2%;
-    /* backdrop-filter: var(--blue) saturate(180%) blur(10px); */
-    /* background-color: var(--blue); */
-    /* background: var(--blue3); */
     justify-content: center;
-    /* text-align: center; */
     align-items: center;
+    transition: transform 0.35s ease;
+  }
+
+  .container:hover {
+    transform: translateY(-4px);
   }
 
   .container img {
-    width: 50%;
-    height: 50%;
+    width: 220px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
   }
   .Work-detail {
     display: flex;

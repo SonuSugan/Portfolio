@@ -1,49 +1,99 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  /* height: 50vh; */
   margin-top: 4rem;
   .Project {
-    /* display: flex; */
     padding: 4% 5%;
   }
   .project-center {
-    padding: var(--padding1);
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     justify-content: center;
-    /* height: 100vh; */
+    align-items: center;
     padding: 3% 2%;
     gap: 2rem;
-    /* height: 30vh; */
-    /* width: 90%; */
   }
 
   .Project-intro {
-    /* display: flex; */
+    width: 100%;
     justify-content: center;
-    /* flex-direction: column; */
-    /* border: 2px solid black; */
   }
   .container {
-    /* border: 2px solid black; */
-    padding: 2% 2%;
-    backdrop-filter: var(--blue) saturate(180%) blur(10px);
-    /* background-color: var(--blue); */
-    background: var(--blue3);
+    padding: 3%;
+    background: #ffffff;
+    border: 1px solid #ececec;
+    box-shadow: 0 8px 32px rgba(20, 30, 60, 0.08);
     justify-content: center;
     text-align: center;
-    border-radius: 15px;
-    
+    border-radius: 18px;
+    overflow: hidden;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
   }
 
-  .contact-right {
-    
+  .container:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 40px rgba(20, 30, 60, 0.14);
   }
 
   .container img {
     width: 90%;
     height: 90%;
+    border-radius: 10px;
+  }
+
+  .live-preview {
+    position: relative;
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 50%;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid #ececec;
+    background: #fafbfc;
+  }
+
+  .live-preview iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300%;
+    height: 300%;
+    border: 0;
+    transform: scale(0.3333);
+    transform-origin: 0 0;
+  }
+
+  .live-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    border-radius: 100px;
+    background: rgba(20, 30, 60, 0.75);
+    backdrop-filter: blur(4px);
+    color: #ffffff;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+  }
+
+  .live-badge .dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #22c55e;
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.6);
+    animation: live-pulse 1.8s ease-in-out infinite;
+  }
+
+  @keyframes live-pulse {
+    0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.6); }
+    70% { box-shadow: 0 0 0 6px rgba(34, 197, 94, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
   }
   .Project-detail {
     display: flex;
@@ -54,11 +104,6 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: row;
     gap: 1rem;
-  }
-  .button-17 > span {
-    /* align-items: center;
-    justify-content: center;
-    text-align: center; */
   }
   @media only screen and (min-width: 300px) and (max-width: 500px) {
     .span1 {
@@ -77,6 +122,7 @@ const Wrapper = styled.div`
     .project-center {
       display: flex;
       flex-direction: column-reverse;
+      align-items: stretch;
     }
     .span4 {
       font-size: 1.8rem;

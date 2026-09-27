@@ -1,11 +1,9 @@
 import styled from "styled-components";
 
 const Wrapper = styled.nav`
-  background: linear-gradient(
-    -180deg,
-    rgba(0, 0, 0, 0.233),
-    rgba(175, 173, 173, 0.123)
-  );
+  background: #ffffff;
+  border-bottom: 1px solid #ececec;
+  box-shadow: 0 4px 24px rgba(20, 30, 60, 0.06);
   display: flex;
   justify-content: space-between;
   padding: var(--padding);
@@ -13,6 +11,8 @@ const Wrapper = styled.nav`
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 50;
+  transition: var(--transition);
 
   // logo and toggle design
 
@@ -43,31 +43,47 @@ const Wrapper = styled.nav`
     gap: 1rem;
     padding: 5% 0%;
     font-size: 1.1rem;
-  }
-
-  // hover effect for meenu
-
-  ul > :hover {
-    cursor: pointer;
-    color: var(--blue);
-    transform: scale(11.5rem);
+    position: relative;
   }
 
   .button1 {
     color: var(--black);
-    /* gap: 1rem; */
-    /* padding: 5% 0%; */
-    /* font-size: 1.1rem; */
+    position: relative;
+    transition: color 0.25s ease;
   }
+
+  .button1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    background: var(--blue);
+    border-radius: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+  }
+
+  // hover effect for menu
+
   .button1:hover {
     cursor: pointer;
     color: var(--blue);
-    transform: scale(11.5rem);
   }
-   li  > .active {
-  
+
+  .button1:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+  li > .active {
     color: var(--blue);
-    
+  }
+
+  li > .active::after {
+    transform: scaleX(1);
   }
 
 
@@ -80,16 +96,24 @@ const Wrapper = styled.nav`
 
   .button {
     display: none;
+    flex: none;
+    width: 42px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
     border: none;
-    background-color: transparent;
+    border-radius: 10px;
+    background-color: #f3f5f9;
     color: var(--black);
-    font-size: 1.5rem;
+    font-size: 1.35rem;
+    transition: background 0.2s ease, color 0.2s ease;
   }
 
   // hover effect for toggle button
 
   .button:hover {
     cursor: pointer;
+    background-color: #eaf6fe;
     color: var(--blue);
   }
 
@@ -102,7 +126,7 @@ const Wrapper = styled.nav`
       display: none;
     }
     .button {
-      display: block;
+      display: flex;
     }
     .logo_heading {
       font-size: 1.7rem;

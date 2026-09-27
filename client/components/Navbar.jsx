@@ -68,6 +68,30 @@ const Navbar = () => {
         </li>
         <li>
           <Link
+            to="skills"
+            className="button1"
+            offset={-90}
+            smooth={true}
+            spy={true}
+            duration={500}
+          >
+            Skills
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="certifications"
+            className="button1"
+            offset={-90}
+            smooth={true}
+            spy={true}
+            duration={500}
+          >
+            Certs
+          </Link>
+        </li>
+        <li>
+          <Link
             to="contact"
             className="button1"
             offset={-100}

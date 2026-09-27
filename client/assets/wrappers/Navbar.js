@@ -5,6 +5,7 @@ const Wrapper = styled.nav`
   border-bottom: 1px solid #ececec;
   box-shadow: 0 4px 24px rgba(20, 30, 60, 0.06);
   display: flex;
+  align-items: center;
   justify-content: space-between;
   padding: var(--padding);
   height: 7vh;
